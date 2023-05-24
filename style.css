@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  button, input, label, form{
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #laptopGuy{
+    width: clamp(200px, 100%, 500px);
+    
+  }
+  
+  #brandName{
+    padding-bottom: 8rem;
+    font-size: 2rem;
+  }
+  
+  body{
+    display: flex;
+    background-color: #FFFAF0;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  #imgDiv, #signUp{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    text-align: left;
+  }
+  
+  form {
+    display: flex;
+    gap: 3rem;
+    margin: 0 auto;
+    border: 1px solid #778899;
+    border-radius: 6px;
+    padding: 3em 2em;
+    /* min-width: clamp(5vw, 100%, 25vw);change? */
+    background-color: #B0C4DE;
+    opacity: 0.5;
+    color: black;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 255, .2);
+  }
+  
+  input{
+    border-radius: 0.3em;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+  }
+  
+  input:hover, input:focus {
+    background-color: rgb(240, 240, 240);
+  }
+  
+  input:focus{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  input:focus, input:active{
+    outline: none;
+    border: 2px solid #7B68EE;
+  }
+  
+  input:invalid{
+    outline: 1px solid red;
+  }
+  
+  label{
+    /* display: inline-block;
+    width: 150px; */
+    text-align: left;
+    margin-bottom: 0.2rem;
+  }
+  
+  .sectionBody{
+    width: 50%;
+  }
+  
+  .inputSection div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  
+  h1{
+   font-size: 2.5em;
+  }
+  #paragraph, .sectionBody > div, .sectionBody > p{
+    margin-left: 2em;
+  }
+  
+  section{
+    gap: 25px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  form section{
+    display: flex;
+    align-content: center;
+  }
+  
+  form section:nth-child(2){
+    gap: 0px;
+  }
+  
+  button {
+    margin-top: 2rem;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    border: none;
+    box-shadow: 5px;
+  }
+  
+  button:hover
+  {
+    opacity: 1;
+    background-color: #B0C4DE;
+    border: 1px #99ccff solid;
+  }
+  
+  button:active
+  {
+    background-color: #00CCC0;
+    border: 1px #000000 solid;
+  }
