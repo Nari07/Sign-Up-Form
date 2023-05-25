@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    
   }
   
   button, input, label, form{
@@ -9,51 +10,98 @@
     margin: 0;
   }
   
-  #laptopGuy{
-    width: clamp(200px, 100%, 500px);
-    
-  }
-  
-  #brandName{
-    padding-bottom: 8rem;
-    font-size: 2rem;
-  }
-  
-  body{
+ body{
     display: flex;
-    background-color: #FFFAF0;
     align-content: center;
     height: 100vh;
     width: 100vw;
+    margin: 0px;
+    font-family: 'Bodoni Moda', serif;
+    color: #ee5c5d;
   }
-  
-  #imgDiv, #signUp{
+
+
+  @font-face {
+    font-family: 'Brand';
+    src: url(/References/Fonts/Brand.woff) format('woff');
+  }
+
+  @font-face {
+    font-family: 'Ahganirya';
+    src: url('Ahganirya-PersonalUse.woff2') format('woff2'),
+        url('Ahganirya-PersonalUse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+ #brandName{
+    padding-top: 4rem;
+    font-size: 3.5rem;
+    font-family: Brand, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    background-color: white;
+    opacity: 0.7;
+ }
+
+ #laptopGuy{
+    width: clamp(350px, 60%, 650px);
+    
+ }  
+
+ #left{
+    background-color: #e9f1bb;
+ }
+
+ #right{
+    background-color: #fff7dc;
+    width: 70%;
+}
+
+ #imgDiv{
+    display: flex;
+    justify-content: center;
+}
+
+ #signUp{
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 1em;
     text-align: left;
-  }
+
+}
   
-  form {
+ form {
     display: flex;
-    gap: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
     border: 1px solid #778899;
     border-radius: 6px;
-    padding: 3em 2em;
+    padding: 6em 4em;
     /* min-width: clamp(5vw, 100%, 25vw);change? */
-    background-color: #B0C4DE;
-    opacity: 0.5;
+    background-color: #fab5bd;
+    opacity: 0.7;
     color: black;
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 255, .2);
   }
   
-  input{
+
+ form > div {
+    display: flex;
+    gap: 3rem;
+ }
+
+input{
     border-radius: 0.3em;
     -webkit-appearance: none;
     appearance: none;
     outline: none;
+    height: 2rem;
+    width: 4 rem;
+    margin-bottom: 10px;
   }
   
   input:hover, input:focus {
@@ -80,29 +128,48 @@
     margin-bottom: 0.2rem;
   }
   
-  .sectionBody{
+  #left p {
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.3em;
+  }
+
+.sectionBody{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
     width: 50%;
   }
   
-  .inputSection div{
+
+.inputSection{
+    width: max(8rem, 320px)
+    
+}
+
+.inputSection div{
     display: flex;
     flex-direction: column;
-    align-content: center;
-  }
+    align-content: center; 
+    
+}
   
-  h1{
+h1{
    font-size: 2.5em;
+   color: #fbaab4;
+   
   }
-  #paragraph, .sectionBody > div, .sectionBody > p{
+
+ #paragraph, .sectionBody > div, .sectionBody > p{
     margin-left: 2em;
-  }
+ }
   
-  section{
+ section{
     gap: 25px;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
   }
   
   form section{
@@ -116,22 +183,22 @@
   
   button {
     margin-top: 2rem;
-    width: 8rem;
+    width: 9rem;
     height: 2rem;
     border-radius: 0.3rem;
     border: none;
     box-shadow: 5px;
+    background-color: #fbaab4;
+    
   }
   
-  button:hover
-  {
+  button:hover{
     opacity: 1;
     background-color: #B0C4DE;
     border: 1px #99ccff solid;
   }
   
-  button:active
-  {
-    background-color: #00CCC0;
+  button:active{
+    background-color: #e9f1bb;
     border: 1px #000000 solid;
   }
