@@ -17,7 +17,8 @@
     width: 100vw;
     margin: 0px;
     font-family: 'Bodoni Moda', serif;
-    color: #ee5c5d;
+    color: #fbaab4;;
+    font-weight: 525;
   }
 
 
@@ -26,23 +27,13 @@
     src: url(/References/Fonts/Brand.woff) format('woff');
   }
 
-  @font-face {
-    font-family: 'Ahganirya';
-    src: url('Ahganirya-PersonalUse.woff2') format('woff2'),
-        url('Ahganirya-PersonalUse.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
  #brandName{
     padding-top: 4rem;
     font-size: 3.5rem;
     font-family: Brand, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
-    background-color: white;
-    opacity: 0.7;
+    background-color: rgba(246, 253, 243, 0.589);
+    
  }
 
  #laptopGuy{
@@ -67,9 +58,10 @@
  #signUp{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 1em;
-    text-align: left;
+    text-align: center;
 
 }
   
@@ -84,7 +76,7 @@
     /* min-width: clamp(5vw, 100%, 25vw);change? */
     background-color: #fab5bd;
     opacity: 0.7;
-    color: black;
+    color: white;
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 255, .2);
   }
   
@@ -105,7 +97,7 @@ input{
   }
   
   input:hover, input:focus {
-    background-color: rgb(240, 240, 240);
+    background-color: whitesmoke;
   }
   
   input:focus{
@@ -118,7 +110,7 @@ input{
   }
   
   input:invalid{
-    outline: 1px solid red;
+    outline: 2px solid red;
   }
   
   label{
@@ -137,6 +129,7 @@ input{
 .sectionBody{
     display: flex;
     flex-direction: column;
+    border: 3px solid white;
     gap: 6rem;
     width: 50%;
   }
@@ -156,7 +149,11 @@ input{
   
 h1{
    font-size: 2.5em;
-   color: #fbaab4;
+   font-weight: 500;
+   color: #8cc5e2;
+   font-family: 'Abril Fatface', impact, sans-serif;
+   -webkit-text-stroke-width: 0px;
+   -webkit-text-stroke-color:  white;
    
   }
 
@@ -189,16 +186,19 @@ h1{
     border: none;
     box-shadow: 5px;
     background-color: #fbaab4;
+    color: white;
+    font-weight: bold;
     
   }
   
   button:hover{
     opacity: 1;
-    background-color: #B0C4DE;
+    background-color: #dde6f1;
     border: 1px #99ccff solid;
+    
   }
   
   button:active{
-    background-color: #e9f1bb;
-    border: 1px #000000 solid;
+    background-color: #f8e0ed;
+    border: 1px white solid;
   }
