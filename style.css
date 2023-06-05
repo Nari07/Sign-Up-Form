@@ -24,7 +24,7 @@
 
   @font-face {
     font-family: 'Brand';
-    src: url(../References/Fonts/Brand.woff) format('woff');
+    src: url(./References/Fonts/Brand.woff) format('woff');
   }
 
  #brandName{
