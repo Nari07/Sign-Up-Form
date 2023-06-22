@@ -1,204 +1,206 @@
 *{
-    box-sizing: border-box;
-    
-  }
+  box-sizing: border-box;
   
-  button, input, label, form{
-    font-family: inherit;
-    font-size: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  
- body{
-    display: flex;
-    align-content: center;
-    height: 100vh;
-    width: 100vw;
-    margin: 0px;
-    font-family: 'Bodoni Moda', serif;
-    color: #fbaab4;;
-    font-weight: 525;
-  }
-
-
-  @font-face {
-    font-family: 'Brand';
-    src: url(References/Fonts/Brand.woff) format('woff');
-  }
-
- #brandName{
-    padding-top: 4rem;
-    font-size: 3.5rem;
-    font-family: Brand, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 550;
-    background-color: rgba(246, 253, 243, 0.589);
-    
- }
-
- #laptopGuy{
-    width: clamp(350px, 60%, 650px);
-    
- }  
-
- #left{
-    background-color: #e9f1bb;
- }
-
- #right{
-    background-color: #fff7dc;
-    width: 70%;
 }
 
- #imgDiv{
-    display: flex;
-    justify-content: center;
+button, input, label, form{
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
 }
 
- #signUp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1em;
-    text-align: center;
+body{
+  display: flex;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  font-family: 'Bodoni Moda', serif;
+  color: #fbaab4;;
+  font-weight: 525;
+}
+
+
+@font-face {
+  font-family: 'Brand';
+  src: url(References/Fonts/Brand.woff) format('woff');
+}
+
+#brandName{
+  padding-top: 4rem;
+  font-size: 3.5rem;
+  font-family: Brand, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 550;
+  background-color: rgba(246, 253, 243, 0.589);
+  
+}
+
+#laptopGuy{
+  width: clamp(350px, 60%, 650px);
+  
+}  
+
+#left{
+  background-color: #e9f1bb;
+}
+
+#right{
+  background-color: #fff7dc;
+  width: 70%;
+}
+
+#imgDiv{
+  display: flex;
+  justify-content: center;
+}
+
+#signUp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
 
 }
-  
- form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-    border: 1px solid #778899;
-    border-radius: 6px;
-    padding: 6em 4em;
-    /* min-width: clamp(5vw, 100%, 25vw);change? */
-    background-color: #fab5bd;
-    opacity: 0.7;
-    color: white;
-    box-shadow: 4px 4px 4px 1px rgba(0, 0, 255, .2);
-  }
-  
 
- form > div {
-    display: flex;
-    gap: 3rem;
- }
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  border: 1px solid #778899;
+  border-radius: 6px;
+  padding: 6em 4em;
+  /* min-width: clamp(5vw, 100%, 25vw);change? */
+  background-color: #fab5bd;
+  opacity: 0.7;
+  color: rgb(232, 243, 248);
+  font-weight: 600;
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 255, .2);
+}
+
+
+form > div {
+  display: flex;
+  gap: 3rem;
+}
 
 input{
-    border-radius: 0.3em;
-    -webkit-appearance: none;
-    appearance: none;
-    outline: none;
-    height: 2rem;
-    width: 4 rem;
-    margin-bottom: 10px;
-  }
-  
-  input:hover, input:focus {
-    background-color: whitesmoke;
-  }
-  
-  input:focus{
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  }
-  
-  input:focus, input:active{
-    outline: none;
-    border: 2px solid #7B68EE;
-  }
-  
-  input:invalid{
-    outline: 2px solid red;
-  }
-  
-  label{
-    /* display: inline-block;
-    width: 150px; */
-    text-align: left;
-    margin-bottom: 0.2rem;
-  }
-  
-  #left p {
-    text-align: center;
-    font-family: 'Bodoni Moda', serif;
-    font-size: 1.3em;
-  }
+  border-radius: 0.3em;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  height: 2rem;
+  width: 4 rem;
+  margin-bottom: 10px;
+}
+
+input:hover, input:focus {
+  background-color: whitesmoke;
+}
+
+input:focus{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+input:focus, input:active{
+  outline: none;
+  border: 2px solid #7B68EE;
+}
+
+form.submitted input:invalid{
+border: 2px solid red;
+}
+
+label{
+  /* display: inline-block;
+  width: 150px; */
+  text-align: left;
+  margin-bottom: 0.2rem;
+}
+
+#left p {
+  text-align: center;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 1.3em;
+}
 
 .sectionBody{
-    display: flex;
-    flex-direction: column;
-    border: 3px solid white;
-    gap: 6rem;
-    width: 50%;
-  }
+  display: flex;
+  flex-direction: column;
+  border: 3px solid white;
+  gap: 6rem;
+  width: 50%;
   
+}
+
 
 .inputSection{
-    width: max(8rem, 320px)
-    
+  width: max(8rem, 320px)
+  
 }
 
 .inputSection div{
-    display: flex;
-    flex-direction: column;
-    align-content: center; 
-    
+  display: flex;
+  flex-direction: column;
+  align-content: center; 
+  
 }
-  
-h1{
-   font-size: 2.5em;
-   font-weight: 500;
-   color: #8cc5e2;
-   font-family: 'Abril Fatface', impact, sans-serif;
-   -webkit-text-stroke-width: 0px;
-   -webkit-text-stroke-color:  white;
-   
-  }
 
- #paragraph, .sectionBody > div, .sectionBody > p{
-    margin-left: 2em;
- }
+h1{
+ font-size: 2.5em;
+ font-weight: 500;
+ color: #8cc5e2;
+ font-family: 'Abril Fatface', impact, sans-serif;
+ -webkit-text-stroke-width: 0px;
+ -webkit-text-stroke-color:  white;
+ 
+}
+
+#paragraph, .sectionBody > div, .sectionBody > p{
+  margin-left: 2em;
+}
+
+section{
+  gap: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   
- section{
-    gap: 25px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
-  }
+}
+
+form section{
+  display: flex;
+  align-content: center;
+}
+
+form section:nth-child(2){
+  gap: 0px;
+}
+
+button {
+  margin-top: 2rem;
+  width: 9rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  border: none;
+  box-shadow: 5px;
+  background-color: #fbaab4;
+  color: white;
+  font-weight: bold;
   
-  form section{
-    display: flex;
-    align-content: center;
-  }
+}
+
+button:hover{
+  opacity: 1;
+  background-color: #dde6f1;
+  border: 1px #99ccff solid;
   
-  form section:nth-child(2){
-    gap: 0px;
-  }
-  
-  button {
-    margin-top: 2rem;
-    width: 9rem;
-    height: 2rem;
-    border-radius: 0.3rem;
-    border: none;
-    box-shadow: 5px;
-    background-color: #fbaab4;
-    color: white;
-    font-weight: bold;
-    
-  }
-  
-  button:hover{
-    opacity: 1;
-    background-color: #dde6f1;
-    border: 1px #99ccff solid;
-    
-  }
-  
-  button:active{
-    background-color: #f8e0ed;
-    border: 1px white solid;
-  }
+}
+
+button:active{
+  background-color: #f8e0ed;
+  border: 1px white solid;
+}
